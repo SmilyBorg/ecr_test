@@ -2,7 +2,7 @@
 
 pip install --upgrade awscli
 ECR_LOGIN=`aws ecr get-login --region us-east-1`
-exec $ECR_LOGIN
+$ECR_LOGIN
 
 TEST_DIR=`pwd`
 
